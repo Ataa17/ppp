@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Authentication</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Face Authentication</h1>
+
+        <div class="video-box">
+            <img src="{{ url_for('video') }}" width="640" height="480" style="border-radius: 12px;">
+        </div>
+
+        <a href="{{ url_for('register') }}">Register New Face</a>
+    </div>
+</body>
+</html>
